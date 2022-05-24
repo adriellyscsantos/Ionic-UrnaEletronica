@@ -10,20 +10,21 @@ export class Tab2Page implements OnInit {
   searchCandidates: string;
   candidates = [
     {
-      "name": "Adrielly",
+      "name": "Fabrício Tavares",
       "number": "7",
-      "image": "https://i.pinimg.com/originals/d8/20/f4/d820f4272d67633dbe8f12e8ed275baf.jpg"
+      "image": "assets/first.jpg"
     },
     {
-      "name": "Marina",
+      "name": "Samantha Pessoa",
       "number": "10",
-      "image": "https://i.pinimg.com/736x/ff/72/7d/ff727d935a7ef71686751051592b3a1d.jpg"
+      "image": "assets/third.jpg"
     },
     {
-      "name": "Nahy",
+      "name": "Marcos Cavalcanti",
       "number": "25",
-      "image": "https://i.pinimg.com/736x/ac/78/93/ac7893283aae4c88f245be0cd92faf80.jpg"
+      "image": "assets/second.jpg"
     },
+
   ];
 
   nomeVariavel: string;
@@ -42,6 +43,7 @@ export class Tab2Page implements OnInit {
   }
 
   funcao() {
+    alert("FIM!")
 
   if(this.searchCandidates == "7"){
     this.candidate1++;
