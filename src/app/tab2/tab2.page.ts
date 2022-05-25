@@ -27,7 +27,7 @@ export class Tab2Page implements OnInit {
 
   ];
 
-  nomeVariavel: string;
+
   count = 0;
   candidate1 = 0;
   candidate2 = 0;
@@ -42,12 +42,13 @@ export class Tab2Page implements OnInit {
   clearSearch() {
     this.searchCandidates = '';
   }
+
   inputBlank() {
     this.searchCandidates = '0';
-    this.funcao();
+    this.calculateVotes();
   }
 
-  funcao() {
+  calculateVotes() {
    if( this.searchCandidates === ''|| this.searchCandidates === null|| this.searchCandidates === undefined){
     alert('Por favor, digite o número do candidato.');
    }
