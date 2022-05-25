@@ -8,9 +8,12 @@
 
 <ion-content [fullscreen]="true">
   <!-- <ion-img src="https://ilupi.com.br/painelilupi/wp-content/uploads/2021/11/ilupi-patente-urna-eletronica-blog.png"> </ion-img> -->
-  <ion-input class="input-border" placeholder='Digite o número do candidato' type="tel" maxlength="2" [(ngModel)]="searchCandidates" animated>
+  <ion-input class="input-border" placeholder='Digite o número do candidato' type="tel" maxlength="2" [(ngModel)]="searchCandidates" animated required>
   </ion-input>
-  <ion-button color="medium" (click)="clearSearch()">
+  <ion-button color="medium" (click)="inputBlank()" value="0">
+    BRANCO
+  </ion-button>
+  <ion-button color="primary" (click)="clearSearch()">
     CORRIGE
   </ion-button>
   <ion-button color="success" class="button" (click)="funcao()">
