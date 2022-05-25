@@ -48,7 +48,6 @@ export class Tab2Page implements OnInit {
   }
 
   funcao() {
-    // console.log(this.searchCandidates, "aq")
    if( this.searchCandidates === ''|| this.searchCandidates === null|| this.searchCandidates === undefined){
     alert('Por favor, digite o número do candidato.');
    }
@@ -67,22 +66,22 @@ export class Tab2Page implements OnInit {
 
   if(this.searchCandidates == '7'){
     this.candidate1++;
-    console.log('candidato 1: ', this.candidate1 );
+    // console.log('candidato 1: ', this.candidate1 );
   }
 
   if(this.searchCandidates == '10'){
     this.candidate2++;
-    console.log('candidato 2: ',this.candidate2);
+    // console.log('candidato 2: ',this.candidate2);
   }
 
   if(this.searchCandidates == '25'){
     this.candidate3++;
-    console.log('candidato 3: ',this.candidate1);
+    // console.log('candidato 3: ',this.candidate1);
   }
 
   this.count =  this.candidate1 + this.candidate2 + this.candidate3 + this.blank;
 
-  console.log('Votos apurados: ', this.count);
+  // console.log('Votos apurados: ', this.count);
 
   this.clearSearch();
   }

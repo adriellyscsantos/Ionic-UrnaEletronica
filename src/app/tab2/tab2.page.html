@@ -7,7 +7,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- <ion-img src="https://ilupi.com.br/painelilupi/wp-content/uploads/2021/11/ilupi-patente-urna-eletronica-blog.png"> </ion-img> -->
   <ion-input class="input-border" placeholder='Digite o número do candidato' type="tel" maxlength="2" [(ngModel)]="searchCandidates" animated required>
   </ion-input>
   <ion-button color="medium" (click)="inputBlank()" value="0">
@@ -26,24 +25,10 @@
       <ion-button color="danger">{{candidate.number}}</ion-button>
       <ion-card-title>{{candidate.name}}</ion-card-title>
     </ion-card-header>
-    <!-- <ion-card-content>
-      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the
-      Wisconsin Territory in 1836.
-    </ion-card-content> -->
   </ion-card>
 
-<!-- <ion-list>
-  <ion-item *ngFor="let candidate of candidates | filter:searchCandidates">
-    <ion-label>{{candidate.name}}</ion-label>
-    <ion-label>{{candidate.number}}</ion-label>
-    <ion-avatar slot="start">
-      <ion-img src="{{candidate.image}}"> </ion-img>
-    </ion-avatar>
-  </ion-item>
-</ion-list> -->
-
   <h3 class="text-center">RESULTADO PARCIAL</h3>
-<ion-list>
+  <ion-list>
     <ion-item>
       <ion-label> Total de votos apurados: {{count}} </ion-label>
     </ion-item>
